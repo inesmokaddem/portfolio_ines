@@ -135,6 +135,7 @@ h1 {
   h3 {
     font-size: 1.5rem;
   }
+<<<<<<< HEAD
 }
 /* ############################
           Arrow down
@@ -196,6 +197,168 @@ h1 {
 /* ############################
             Sections
 ############################ */
+=======
+<<<<<<< HEAD
+}
+/* ############################
+          Arrow down
+############################ */
+.arrow{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+=======
+}
+/* ############################
+          Arrow down
+############################ */
+.arrow{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+/* ############################
+            Navs
+############################ */
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: 1px solid #000;
+  border-radius: 4rem;
+  background-color: #000B16;
+  color: #fff;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+  background-color: #fff;
+  border-radius: 4rem;
+  color: #000B16;
+  border: 1px solid #000B16;
+  font-size: 0.9rem;
+}
+/* ############################
+            Sections
+############################ */
+>>>>>>> 69939f89edc223471d82cf591e1507ad71bb2a23
+.contact {
+  background-color: #eaf4ff;
+}
+.competences_section .img-projects {
+  width: 40%;
+}
+@media (max-width: 991px) {
+  .competences_section .img-projects {
+    width: 80%;
+  }
+}
+.description {
+  font-size: 18px;
+>>>>>>> 870769e9405dee74db0f15937a16803b06823a0f
+}
+/* ############################
+            Navs
+############################ */
+<<<<<<< HEAD
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: 1px solid #000;
+  border-radius: 4rem;
+  background-color: #000B16;
+  color: #fff;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+  background-color: #fff;
+  border-radius: 4rem;
+  color: #000B16;
+  border: 1px solid #000B16;
+  font-size: 0.9rem;
+=======
+.img_skills {
+  height: 3rem;
+  margin: 1rem;
+}
+.img_skills_small {
+  height: 2rem;
+  margin: 1rem;
+  margin-top: 1.9rem;
+}
+.about_section .profile_picture {
+  width: 27%;
+>>>>>>> 267f31610d1213161723be2d6637722c43169a03
+}
+/* ############################
+<<<<<<< HEAD
+          Colors
+############################ */
+.text-white {
+  color: #fff;
+}
+=======
+<<<<<<< HEAD
+            Sections
+############################ */
 .contact {
   background-color: #eaf4ff;
 }
@@ -231,6 +394,14 @@ h1 {
 .text-white {
   color: #fff;
 }
+=======
+          Colors
+############################ */
+.text-white {
+  color: #fff;
+}
+>>>>>>> 870769e9405dee74db0f15937a16803b06823a0f
+>>>>>>> 69939f89edc223471d82cf591e1507ad71bb2a23
 
 /* ############################
          About Icons
