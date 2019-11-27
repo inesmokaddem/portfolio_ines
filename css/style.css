@@ -145,7 +145,10 @@ h2 {
 ############################ */
 .img_skills {
   height: 3rem;
-  margin: 1rem; 
+  margin: 1rem;
+}
+.about_card .profile_picture {
+  width: 27%;
 }
 /* ############################
           Navigation
