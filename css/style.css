@@ -177,6 +177,7 @@ h1 {
 /* ############################
             Navs
 ############################ */
+<<<<<<< HEAD
 .nav-tabs {
   border: none;
 }
@@ -192,6 +193,14 @@ h1 {
   color: #000B16;
   border: 1px solid #000B16;
   font-size: 0.9rem;
+=======
+.img_skills {
+  height: 3rem;
+  margin: 1rem;
+}
+.about_card .profile_picture {
+  width: 27%;
+>>>>>>> 267f31610d1213161723be2d6637722c43169a03
 }
 /* ############################
             Sections
