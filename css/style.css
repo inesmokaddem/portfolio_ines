@@ -1,15 +1,10 @@
-/*
-font-family: 'Raleway', sans-serif;
-font-family: 'Open Sans Condensed', sans-serif;
-*/
-
 
 body {
   text-align: center;
   margin: 0 auto;
   width: 100%;
+  font-family: 'Montserrat', sans-serif;
 }
-
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -83,12 +78,15 @@ body {
 .text-center {
   text-align: center;
 }
+.vh-100 {
+  height: 100vh;
+}
 /* ############################
             Banner
 ############################ */
 .banner {
   position: relative;
-  height: 70vh;
+  height: 100vh;
   max-width: 100%;
   margin-bottom: 2rem;
 }
@@ -107,35 +105,107 @@ body {
 }
 .banner_title {
   position: absolute;
-  bottom: 3rem;
+  bottom: 10rem;
+  left: 3rem;
 }
 .banner_title img {
   width: 75%;
 }
+/*.img-about {
+  width: 100%;
+  max-height: 18rem;
+}*/
 /* ############################
             Titles
 ############################ */
 h1 {
   color: white !important;
-  margin-bottom: 1.5rem;
-  padding: 0 2rem;
+  margin-bottom: 2rem;
   font-size: 5rem;
-  letter-spacing: 9px;
-  font-family: 'Amatic SC', cursive;
+  letter-spacing: 1px;
   font-weight: 600;
 }
-h2 {
-  font-family: 'Amatic SC', cursive;
-  color: white !important;
+@media (max-width: 991px) {
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
 }
 /* ############################
-            Cards
+          Arrow down
 ############################ */
-.about_card, .services_card, .competences_card {
-  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-  padding: 1rem!important;
-  margin-bottom: 3rem!important;
-  border-radius: .25rem!important;
+.arrow{
+    position: absolute;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.arrow span{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+.arrow span:nth-child(2){
+    animation-delay: -0.2s;
+}
+.arrow span:nth-child(3){
+    animation-delay: -0.4s;
+}
+@keyframes animate {
+    0%{
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+/* ############################
+            Navs
+############################ */
+.nav-tabs {
+  border: none;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border: 1px solid #000;
+  border-radius: 4rem;
+  background-color: #000B16;
+  color: #fff;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
+  background-color: #fff;
+  border-radius: 4rem;
+  color: #000B16;
+  border: 1px solid #000B16;
+  font-size: 0.9rem;
+}
+/* ############################
+            Sections
+############################ */
+.contact {
+  background-color: #eaf4ff;
+}
+.competences_section .img-projects {
+  width: 40%;
+}
+@media (max-width: 991px) {
+  .competences_section .img-projects {
+    width: 80%;
+  }
 }
 .description {
   font-size: 18px;
@@ -145,58 +215,22 @@ h2 {
 ############################ */
 .img_skills {
   height: 3rem;
-  margin: 1rem; 
+  margin: 1rem;
+}
+.img_skills_small {
+  height: 2rem;
+  margin: 1rem;
+  margin-top: 1.9rem;
+}
+.about_section .profile_picture {
+  width: 27%;
 }
 /* ############################
-          Navigation
+          Colors
 ############################ */
-
-.main-nav {
-  width: 100%;
-  text-align: center;
-  background: white;
-  border-top: grey 1px solid;
-  z-index: 999;
-  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.5)
+.text-white {
+  color: #fff;
 }
-
-.main-nav-scrolled, header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.main-nav .navigation {
-  list-style: none;
-  text-align:center;
-  display: -webkit-inline-box;
-  padding-left: 0;
-  margin: 0;
-}
-
-.main-nav .navigation li {
-  margin: 15px 0;
-  padding: 10px 12px;
-}
-
-.main-nav .navigation li a {
-  color: rgba(44, 45, 45, 1);
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-.main-nav .navigation li a:hover {
-  text-decoration: none;
-  color: red;
-}
-.main-nav .navigation .dropdown ul li{
-  margin: 0;
-  padding: 0;
-}
-.main-nav .navigation .dropdown ul li a:hover {
-  background: none;
-}
-
 
 /* ############################
          About Icons
@@ -254,88 +288,14 @@ h2 {
             Services
 ############################ */
 
-.services {
-
-}
 
 /* ############################
             Contact
 ############################ */
 
-.contactImage {
-  background-image: url("../img/mapoffice.jpg");
-  background-size: cover;
-  background-position: center;
-}
-.contactImage .email_icon {
-  width: 13%;
-}
-
-.contactContent {
-  background-color: rgba(0, 0, 0, 0.4);
-  padding: 17px 25px;
-}
-
-.contactContent h2 {
-  color: white;
-  font-size: 36px;
-  text-transform: uppercase;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  margin-top: 0;
-}
-
-.contactContent p {
-  font-size: 18px;
-  font-family: 'Raleway', sans-serif;
-  color: white;
-  padding-top: 20px;
-  font-weight: 300;
-}
-
-.contactWrapper {
-  padding: 20px;
-  background: white;
-}
-
-.contactMeLeft {
-  padding: 20px;
-}
-
-.contactWrapper .contactMeLeft h3 {
-  color: rgba(44, 45, 45, 1);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin: 10px auto 20px;
-}
-
-.contactWrapper .contactMeLeft p {
-  color: rgba(44, 45, 45, 1);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  margin: 10px auto 20px;
-}
-
-.contactMeLeft .contactSocial {
-  list-style: none;
-  display: -webkit-inline-box;
-  color: rgba(44, 45, 45, 1);
-  padding: 0;
-}
-
-.contactMeLeft .contactSocial li {
-  padding: 0 10px;
-}
-
-.contactMeLeft .contactSocial li a {
-  color: rgba(44, 45, 45, 1);
-}
-
-.contactMeLeft .contactSocial li a:hover {
-  color: rgba(0, 149, 255, 1);
+.email i {
+  font-size: 3rem;
+  color: #000;
 }
 
 
