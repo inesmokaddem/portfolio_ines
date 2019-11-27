@@ -200,7 +200,7 @@ h1 {
   background-color: #eaf4ff;
 }
 .competences_section .img-projects {
-  width: 40%;
+  width: 70%;
 }
 @media (max-width: 991px) {
   .competences_section .img-projects {
@@ -209,6 +209,9 @@ h1 {
 }
 .description {
   font-size: 18px;
+}
+.project-number {
+  font-size: 4rem;
 }
 /* ############################
           Skills logo
