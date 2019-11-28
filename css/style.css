@@ -7,6 +7,16 @@ body {
   background-color: #0073bcdb;
   color: #fff;
 }
+@media (max-width: 400px) {
+  body {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 350px) {
+  body {
+    font-size: 0.6rem;
+  }
+}
 .container-fluid {
   margin: 0;
   padding: 0;
@@ -88,6 +98,12 @@ body {
   position: absolute;
   bottom: 10rem;
   left: 2rem;
+}
+@media (max-width: 350px) {
+  .banner_title {
+    position: absolute;
+    left: 1rem;
+  }
 }
 .banner_title img {
   width: 75%;
@@ -184,6 +200,16 @@ h1 {
   color: #0073BC;
   border: 1px solid #0073BC;
   font-size: 0.9rem;
+}
+@media (max-width: 400px) {
+  .nav-item .nav-link {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 350px) {
+  .nav-item .nav-link {
+    font-size: 0.6rem;
+  }
 }
 /* ############################
             Sections
