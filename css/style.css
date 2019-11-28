@@ -188,6 +188,10 @@ h1 {
 /* ############################
             Sections
 ############################ */
+.competences {
+  background-color: #fff;
+  color: #0073bcdb;
+}
 .competences_section .img-projects {
   width: 70%;
 }
@@ -203,7 +207,7 @@ h1 {
   width: 50%;
 }
 .competences_section i {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 .description {
   font-size: 18px;
