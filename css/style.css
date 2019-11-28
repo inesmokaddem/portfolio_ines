@@ -221,6 +221,14 @@ h1 {
 .competences_section .img-projects {
   width: 70%;
 }
+.competences_section .img-profile {
+  width: 15%;
+}
+@media (max-width: 991px) {
+  .competences_section .img-profile {
+    width: 30%;
+  }
+}
 @media (max-width: 991px) {
   .competences_section .img-projects {
     width: 80%;
@@ -240,6 +248,11 @@ h1 {
 }
 .project-number {
   font-size: 4rem;
+}
+.project-bloc {
+  background-image: url('../img/realisations.jpg');
+  object-fit: cover;
+  width: 100%;
 }
 /* ############################
           Skills logo
@@ -266,8 +279,41 @@ h1 {
   color: #000;
 }
 
-
-
+/* ############################
+            buttons
+############################ */
+#back-btn {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  bottom: 13rem;
+  z-index: 100;
+  text-align: center;
+  border-radius: 4rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  left: 0rem;
+}
+#back-btn i {
+  color: #fff;
+  position: relative;
+  top: 0.6rem;
+  font-size: 2rem;
+}
+.btn-projects {
+  background: #FAC124;
+  padding: 1rem 4rem;
+  border-radius: 5rem;
+  border: 5px solid #fff;
+  font-size: 1.7rem;
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-delay: 0.4s;
+}
+.btn-projects:hover {
+  text-decoration: none;
+  background-color: #0073bcdb;
+}
 /* ############################
             Footer
 ############################ */
@@ -277,11 +323,10 @@ footer {
 }
 
 footer p {
-  font-family: 'Raleway', sans-serif;
-  color: rgba(200, 200, 200, 1);
+  color: #dee2e6;
   text-transform: uppercase;
   margin: 15px auto;
-  font-size: 15px;
+  font-size: 0.6rem;
 }
 a.email_me{
   color: red;
