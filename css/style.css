@@ -4,44 +4,16 @@ body {
   margin: 0 auto;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
+  background-color: #0073bcdb;
+  color: #fff;
 }
 .container-fluid {
   margin: 0;
   padding: 0;
 }
-
-.smallSpace {
-  height: 40px;
+.list-style-none {
+  list-style: none;
 }
-
-.centerSmallSeperator {
-  border: 2px solid #fff;
-  width: 175px;
-  margin: 0px auto;
-}
-
-.centerExSmallSeperator {
-  border: 1px solid #f00;
-  width: 75px;
-  margin: 0px auto;
-}
-
-.whiteSmallBreak {
-  border: 1px solid white;
-  width: 150px;
-  margin: 10px auto;
-}
-
-.headerIcon {
-  width: 100px;
-  height: 100px;
-  color: white;
-  border: 2px solid red;
-  background: red;
-  border-radius: 100%;
-  line-height: 100px;
-}
-
 .left {
   float: left;
 }
@@ -58,6 +30,15 @@ body {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+/* ############################
+            Colors
+############################ */
+.blue {
+  color: #0073bcdb;
+}
+.orange {
+  color: #E49B1B;
 }
 /* ############################
             Container
@@ -106,7 +87,7 @@ body {
 .banner_title {
   position: absolute;
   bottom: 10rem;
-  left: 3rem;
+  left: 2rem;
 }
 .banner_title img {
   width: 75%;
@@ -140,26 +121,37 @@ h1 {
           Arrow down
 ############################ */
 .arrow{
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.arrow.passions {
+  position: absolute;
+  bottom: -33%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.arrow.about {
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
 }
 .arrow span{
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #fff;
-    border-right: 5px solid #fff;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
 }
 .arrow span:nth-child(2){
-    animation-delay: -0.2s;
+  animation-delay: -0.2s;
 }
 .arrow span:nth-child(3){
-    animation-delay: -0.4s;
+  animation-delay: -0.4s;
 }
 @keyframes animate {
     0%{
@@ -181,24 +173,21 @@ h1 {
   border: none;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  border: 1px solid #000;
+  border: 1px solid #0073BC;
   border-radius: 4rem;
-  background-color: #000B16;
+  background-color: #0073BC;
   color: #fff;
 }
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link {
   background-color: #fff;
   border-radius: 4rem;
-  color: #000B16;
-  border: 1px solid #000B16;
+  color: #0073BC;
+  border: 1px solid #0073BC;
   font-size: 0.9rem;
 }
 /* ############################
             Sections
 ############################ */
-.contact {
-  background-color: #eaf4ff;
-}
 .competences_section .img-projects {
   width: 70%;
 }
@@ -206,6 +195,15 @@ h1 {
   .competences_section .img-projects {
     width: 80%;
   }
+  .competences_section .img-projects.small {
+    width: 60%;
+  }
+}
+.img-projects.small {
+  width: 50%;
+}
+.competences_section i {
+  font-size: 2.5rem;
 }
 .description {
   font-size: 18px;
@@ -228,69 +226,6 @@ h1 {
 .about_section .profile_picture {
   width: 27%;
 }
-/* ############################
-          Colors
-############################ */
-.text-white {
-  color: #fff;
-}
-
-/* ############################
-         About Icons
-############################ */
-
-
-.about .aboutIcon {
-  width: 100px;
-  height: 100px;
-  color: #f00;
-  border: 2px solid rgba(230, 230, 230, 1);
-  background: white;
-  border-radius: 100%;
-  line-height: 95px;
-  font-size: 40px;
-}
-.aboutme-section{
-  color: rgba(44, 45, 45, 1);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 300;
-    font-size: 40px;
-    text-transform: uppercase;
-    margin: 20px auto;
-}
-
-.aboutIconColumn {
-  padding: 25px;
-  display: none;
-}
-.about h3{
-  color: rgba(44, 45, 45, 1);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 300;
-  font-size: 30px;
-  text-transform: uppercase;
-  margin: 20px auto;
-  padding-top: 14px;
-}
-
-.aboutIconColumn h3 {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 25px;
-  margin: 20px auto;
-}
-
-.aboutIconColumn p {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  margin: 20px auto;
-}
-
-/* ############################
-            Services
-############################ */
-
 
 /* ############################
             Contact
@@ -323,3 +258,4 @@ a.email_me{
   text-transform: uppercase;
   font-family: 'Raleway', sans-serif;
 }
+
