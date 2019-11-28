@@ -41,6 +41,9 @@ body {
   max-width: 100%;
   height: auto;
 }
+.text-underline {
+  text-decoration: underline;
+}
 /* ############################
             Colors
 ############################ */
